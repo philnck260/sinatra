@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Page gossip</title>
+  </head>
+  <body>
+    <h1>There is the gossip page n°<%= gossip_id %></h1>
+    <p>His author is <%= gossip_author %></p>
+    <p>His gossip is <%= gossip_content %></p>
+    <p><a href="/gossips/<%= gossip_id.to_i %>/edit/">Edit the gossip</a></p>
+    <p><a href="/">Come home</a></p>
+  </body>
+</html>

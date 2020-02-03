@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>My Gossip network !</h1>
+    <p>You can create a gossip <a href="/gossips/new/">here </a> !</p>
+    <p>Here are all the gossips !</p>
+    <% gossips.each do |gossip| %>
+        <p>
+          <a href="gossips/<%= gossip.id.to_i %>/"><%= gossip.content %></a>
+        </p>
+      <% end %>
+  </body>
+</html>
